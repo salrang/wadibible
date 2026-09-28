@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기도문·기도 메모 계정 저장 · 와디바이블</title>
+<style>
+  :root { color-scheme: light dark; --ink: #191f28; --muted: #6b7684; --line: #e5e8eb; --bg: #fff; --accent: #e8850c }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #eaedf0; --muted: #9aa5b1; --line: #2b3138; --bg: #15181c }
+  }
+  * { box-sizing: border-box }
+  body {
+    margin: 0; padding: 40px 20px 80px; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+      "Noto Sans KR", system-ui, sans-serif;
+    line-height: 1.65; word-break: keep-all;
+  }
+  main { max-width: 680px; margin: 0 auto }
+  .home { display: inline-block; margin-bottom: 28px; font-size: 14px; color: var(--muted); text-decoration: none }
+  .home:hover { color: var(--accent) }
+  h1 { margin: 0 0 8px; font-size: 26px; letter-spacing: -0.02em }
+  .effective { margin: 0 0 28px; font-size: 13px; color: var(--muted) }
+  hr { height: 1px; margin: 0 0 28px; border: 0; background: var(--line) }
+  h2 { margin: 32px 0 8px; font-size: 16px; letter-spacing: -0.01em }
+  p { margin: 0; font-size: 15px; color: var(--muted) }
+  a { color: var(--accent) }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted) }
+  ul.docs { margin: 0; padding: 0; list-style: none }
+  ul.docs li { padding: 18px 0; border-bottom: 1px solid var(--line) }
+  ul.docs a { font-size: 17px; font-weight: 600; text-decoration: none; color: var(--ink) }
+  ul.docs a:hover { color: var(--accent) }
+  ul.docs span { display: block; margin-top: 4px; font-size: 14px; color: var(--muted) }
+
+  /* 소개 페이지 */
+  .hero { padding: 16px 0 4px; text-align: center }
+  .hero h1 { margin: 0; font-size: 40px; letter-spacing: -0.03em }
+  .hero .tagline { margin: 10px 0 0; font-size: 18px; color: var(--muted) }
+  .lead { margin: 28px 0 0; font-size: 16px; line-height: 1.75; text-align: center }
+  .shots {
+    display: flex; gap: 16px; margin: 36px 0 0; padding-bottom: 8px;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .shots::-webkit-scrollbar { display: none }
+  /* 넓은 화면에서는 네 장이 한 줄에, 좁으면 옆으로 민다 */
+  .shot { flex: 1 1 0; min-width: 150px; margin: 0 }
+  .shot img {
+    display: block; width: 100%; height: auto;
+    border: 1px solid var(--line); border-radius: 18px;
+  }
+  .shot figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); text-align: center }
+  ul.features { margin: 40px 0 0; padding: 0; list-style: none }
+  ul.features li { padding: 16px 0; border-bottom: 1px solid var(--line) }
+  ul.features b { display: block; font-size: 16px; color: var(--ink) }
+  ul.features span { display: block; margin-top: 4px; font-size: 15px; color: var(--muted) }
+  .section { margin-top: 48px }
+  .section h2 { margin: 0 0 12px; font-size: 18px }
+  dl.info { margin: 0; font-size: 15px; color: var(--muted) }
+  dl.info div { display: flex; gap: 12px; padding: 7px 0 }
+  dl.info dt { flex: 0 0 112px; color: var(--ink) }
+  dl.info dd { margin: 0 }
+</style>
+</head>
+<body>
+<main>
+<a class="home" href="./">← 와디바이블 약관</a>
+<h1>기도문·기도 메모 계정 저장</h1>
+<p class="effective">시행일 2026년 10월 1일 · 버전 1.0</p>
+<hr>
+<h2>제1조 (동의하지 않아도 됩니다)</h2>
+<p>이 항목은 선택입니다. 동의하지 않아도 기도 탭을 포함한 와디바이블의 모든 기능을 그대로 쓸 수 있습니다. 동의하지 않으면 기도문과 기도 메모는 서버로 보내지 않고 이 기기에만 저장합니다. 이 경우 기기를 바꾸거나 앱을 지우면 기도문과 메모는 옮겨지지 않고 사라집니다.</p>
+<h2>제2조 (왜 따로 동의를 받나요)</h2>
+<p>기도문과 메모는 이용자가 자유롭게 쓰는 글이라 신앙이나 건강처럼 민감한 내용이 담길 수 있습니다. 개인정보 보호법은 이런 정보를 처리할 때 다른 개인정보와 구분해 따로 동의를 받도록 하고 있습니다.</p>
+<h2>제3조 (저장하는 것과 목적)</h2>
+<p>① 저장하는 것 — 기도문(기도제목)과 그 순서, 기도를 마친 뒤 남긴 메모, 동의한 시각<br>② 목적 — 로그인한 계정에 보관해, 기기를 바꾸거나 다시 설치해도 기도문과 메모를 이어서 볼 수 있게 하기<br>③ 운영자는 이를 서비스 제공 외의 목적으로 열어 보거나 쓰지 않고, 다른 곳에 제공하지 않습니다.</p>
+<h2>제4조 (보관 장소와 기간)</h2>
+<p>① 계정 정보와 같은 곳(Supabase, 호주 시드니)에 암호화된 통신으로 보냅니다.<br>② 동의를 철회하거나 계정을 삭제할 때까지 보관합니다.</p>
+<h2>제5조 (철회 방법)</h2>
+<p>계정 화면 → 설정 → 「기도문·메모 계정에 저장」을 끄면 됩니다. 끄면 서버에 있던 기도문과 메모를 이 기기로 옮긴 뒤 서버에서 바로 지웁니다. <a href="mailto:wadibible@gmail.com">wadibible@gmail.com</a> 로 알려 주셔도 됩니다.</p>
+<footer>와디바이블 · 상호 와디 · 대표 정사라 · 사업자등록번호 622-14-76141<br><a href="mailto:wadibible@gmail.com">wadibible@gmail.com</a></footer>
+</main>
+</body>
+</html>
